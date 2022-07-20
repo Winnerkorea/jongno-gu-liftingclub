@@ -1,0 +1,41 @@
+.nav {
+  @apply h-12 flex justify-between items-center text-sm;
+}
+
+.nav .nav__menu {
+  @apply fixed bg-white border py-3 shadow w-11/12 -top-full left-0 right-0 mx-auto duration-700 ease-in-out  rounded-xl z-50;
+}
+
+.nav .nav__menu .nav__list {
+  @apply flex flex-col items-center gap-y-6;
+}
+
+.nav .nav__link,
+.nav .nav__logo,
+.nav .nav__toggle {
+  @apply font-semibold text-gray-500;
+}
+
+.nav .nav__logo {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.nav .nav__toggle {
+  @apply text-xl;
+}
+
+.nav .show-menu {
+  @apply top-14;
+}
+
+.nav .active-link {
+  @apply relative;
+}
+
+.nav .active-link::before {
+  @apply absolute -bottom-3 left-[45%] w-5 h-5 bg-black rounded-full;
+}
+
+/* Change background header */
+.scroll-header {
+  @apply shadow-xl;
+}

@@ -1,0 +1,11 @@
+.home__container {
+  @apply gap-y-12;
+}
+
+.home__title {
+  @apply text-2xl font-bold mb-3;
+}
+
+.home__title {
+  font-family: "Poppins", sans-serif;
+}

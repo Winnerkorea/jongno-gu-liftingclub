@@ -1,0 +1,172 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&family=Gugi&family=Noto+Sans+KR:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap");
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+/* components.css */
+@import "./components/badge.css";
+@import "./components/buttons.css";
+@import "./components/card.css";
+@import "./components/forget.css";
+@import "./components/detailTag.css";
+@import "./components/modal.css";
+@import "./components/nav.css";
+
+/* Screen CSS */
+@import "./screens/home.css";
+
+.section {
+  @apply pt-20 pb-4;
+}
+
+/*
+font-family: 'Cute Font', cursive;
+font-family: 'Gugi', cursive;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+*/
+
+/* SECTION BASE */
+.section__title,
+.section__title-center {
+  @apply text-2xl text-gray-800 text-center mb-4;
+}
+
+/* HOME BASE */
+.home__container {
+  @apply gap-y-12;
+}
+
+.home__title {
+  @apply text-2xl font-bold mb-3;
+}
+
+.home__title {
+  font-family: "Poppins", sans-serif;
+}
+
+/* SERVICE BASE */
+
+.services__data {
+  @apply grid grid-cols-1 gap-y-4 bg-gray-50 border shadow py-8 px-6 rounded-2xl;
+}
+
+.services__subtitle {
+  @apply text-xl font-semibold;
+}
+
+/* LOCATION BASE */
+
+.location__container {
+  @apply gap-10;
+}
+
+.location__data {
+  @apply text-center;
+}
+
+.location__description {
+  @apply mb-6;
+}
+
+/* CONTACT */
+.contact__container {
+  @apply pb-12;
+}
+
+.contact__description {
+  @apply text-center;
+}
+
+.contact__content {
+  @apply gap-y-3 mt-5;
+}
+
+.contact__address {
+  @apply text-base font-semibold text-gray-800;
+}
+
+.contact__information {
+  @apply font-normal text-gray-900;
+}
+
+/*=============== FOOTER ===============*/
+.footer {
+  @apply bg-amber-200 pb-8;
+}
+
+.footer__container {
+  @apply gap-y-8;
+}
+
+.footer__logo,
+.footer__title {
+  @apply text-lg mb-6 font-semibold;
+}
+
+.footer__logo {
+  display: inline-block;
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.footer__description,
+.footer__link {
+  @apply text-sm;
+}
+
+.footer__links {
+  @apply grid gap-y-2;
+}
+
+.footer__link {
+  @apply text-gray-900;
+}
+
+.footer__social {
+  @apply flex gap-x-6;
+}
+
+.footer__social-link {
+  @apply text-lg text-gray-900;
+}
+
+.footer__copy {
+  margin-top: 6rem;
+  text-align: center;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color);
+}
+
+/*=============== SCROLL UP ===============*/
+.scrollup {
+  @apply bg-yellow-400;
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: inline-flex;
+  padding: 0.3rem;
+  border-radius: 0.25rem;
+  z-index: 10000;
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+.scrollup:hover {
+  @apply bg-yellow-500;
+}
+
+.scrollup__icon {
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+  bottom: 3rem;
+}
