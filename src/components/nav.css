@@ -1,13 +1,13 @@
 .nav {
-  @apply h-12 flex justify-between items-center text-sm;
+  @apply h-12 flex justify-between items-center text-sm lg:container lg:mx-auto;
 }
 
 .nav .nav__menu {
-  @apply fixed bg-white border py-3 shadow w-11/12 -top-full left-0 right-0 mx-auto duration-700 ease-in-out  rounded-xl z-50;
+  @apply fixed bg-white border py-3 shadow w-11/12 -top-full left-0 right-0 lg:top-0 mx-auto duration-700 ease-in-out  rounded-xl z-50 lg:border-none lg:shadow-none lg:static lg:max-w-5xl;
 }
 
 .nav .nav__menu .nav__list {
-  @apply flex flex-col items-center gap-y-6;
+  @apply flex flex-col items-center gap-y-6 lg:flex-row lg:justify-between;
 }
 
 .nav .nav__link,
@@ -20,7 +20,7 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 .nav .nav__toggle {
-  @apply text-xl;
+  @apply text-xl lg:hidden;
 }
 
 .nav .show-menu {

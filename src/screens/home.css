@@ -9,3 +9,7 @@
 .home__title {
   font-family: "Poppins", sans-serif;
 }
+
+.section {
+  @apply lg:max-w-5xl mx-auto;
+}
